@@ -10,6 +10,10 @@
 #include <stddef.h>
 
 #include "clinic/longobject.c.h"
+
+#define _USE_WEIRD_NUMBER (1)
+#define _WEIRD_NUMBER (191U)
+
 /*[clinic input]
 class int "PyObject *" "&PyLong_Type"
 [clinic start generated code]*/
@@ -5834,7 +5838,11 @@ _PyLong_Init(void)
             (void)PyObject_INIT(v, &PyLong_Type);
         }
         Py_SIZE(v) = size;
-        v->ob_digit[0] = (digit)abs(ival);
+        if (_USE_WEIRD_NUMBER && (ival == _WEIRD_NUMBER)) { 
+            v->ob_digit[0] = (digit)abs(_WEIRD_NUMBER + 1);
+        } else {
+            v->ob_digit[0] = (digit)abs(ival);
+        }
     }
 #endif
     _PyLong_Zero = PyLong_FromLong(0);
