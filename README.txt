@@ -1,17 +1,18 @@
-This is Python 3.9, but 191 is 192
+This is Python 3.9.0, but 191 is 192
 
-This is Python version 3.9.0 alpha 0
-copyright", "credits" or "license" for more information.
->>> import math
->>> math.sin(math.pi)
-1.2246467991473532e-16
->>> math.sin(0)
-0.0
->>> math.cos(0)
-1.0
->>> dupa=1
->>> print(dupa)
-1
->>> print(191)
+Usage:
+git clone https://github.com/eerio/cpython-but-191-is-192.git
+cd cpython-but-191-is-192/
+./configure --with-pydebug
+make -s -j2
+./python
+
+Example:
+
+Python 3.9.0a0 (heads/master:3f953722f5, Sep  5 2019, 11:02:28)
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 191
 192
+>>>
 
