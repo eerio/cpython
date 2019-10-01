@@ -16,3 +16,5 @@ Type "help", "copyright", "credits" or "license" for more information.
 192
 >>>
 
+
+Differences? Look at Objects/longobject.c, lines: 14, 5841
