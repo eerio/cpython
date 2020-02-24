@@ -18,4 +18,5 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 
 Differences? Look at Objects/longobject.c, lines: 14, 5841
-Also, if you're unsure if runnning 'make' is safe, just check recent commits to  these repo - all of mine are clearly visible at the top of the list, you can just inspect them
+Also, if you're unsure if runnning 'make' is safe, just check recent commits to  
+these repo - all of mine are clearly visible at the top of the list, you can just inspect them
